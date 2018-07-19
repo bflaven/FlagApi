@@ -63,7 +63,7 @@ $ npm start
 ```
 
 ### Run the test
-Do not forget to launch the API before.
+Do not forget to launch the API before. The tests are using resources in JSON available in the directory **/resources-test/**
 
 ```
 $ cd /path-to-your-where-you-want-to-create-your-app/FlagApi-v2/
