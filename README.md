@@ -54,11 +54,11 @@ Other possible tools that maybe useful:
 If you already have NPM install and known how to clone
 
 ```
-cd /path-to-your-where-you-want-to-create-your-app/
-git clone https://github.com/bflaven/FlagApi.git FlagApi-v2
-cd FlagApi-v2
-npm install
-npm start
+$ cd /path-to-your-where-you-want-to-create-your-app/
+$ git clone https://github.com/bflaven/FlagApi.git FlagApi-v2
+$ cd FlagApi-v2
+$ npm install
+$ npm start
 
 ```
 
@@ -66,8 +66,8 @@ npm start
 Do not forget to launch the API before.
 
 ```
-cd /path-to-your-where-you-want-to-create-your-app/FlagApi-v2/
-npm test
+$ cd /path-to-your-where-you-want-to-create-your-app/FlagApi-v2/
+$ npm test
 
 ```
 
@@ -172,7 +172,8 @@ example: http://localhost:3000/api/v2/area/17098242
 For those, you want to get the code directly, you can use the following command.
 
 ```
-$ git clone https://github.com/bflaven/FlagApi.git
+$ cd /path-to-your-where-you-want-to-create-your-app/
+$ git clone https://github.com/bflaven/FlagApi.git FlagApi-v2
 $ cd FlagApi-v2
 $ npm install
 ```
