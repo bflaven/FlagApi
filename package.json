@@ -1,5 +1,5 @@
 {
-  "name": "restcountries",
+  "name": "FlagApi",
   "version": "1.0.0",
   "description": "Get information about countries via a RESTful API (Node.JS Version)",
   "main": "server.js",
@@ -7,22 +7,19 @@
     "start": "node server.js",
     "test": "mocha test/*.js --timeout 15000 --reporter spec"
   },
-  "author": "Hengki Sihombing <hengki.sihombing@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:aredo/restcountries.git"
+    "url": "https://github.com/bflaven/FlagApi.git"
   },
   "keywords": [
     "RESTful",
     "REST",
     "countries",
-    "country"
+    "country",
+    "test",
+    "Mocha"
   ],
-  "bugs": {
-    "url": "https://github.com/aredo/restcountries/issues"
-  },
-  "homepage": "https://github.com/aredo/restcountries",
   "dependencies": {
     "async": "^0.9.0",
     "body-parser": "^1.10.1",
