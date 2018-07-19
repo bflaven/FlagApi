@@ -49,17 +49,27 @@ Other possible tools that maybe useful:
 
 
 
-### Start the application
+### Clone and Start the application
 
-If you already have NPM install and knwon how to clone
-
-
+If you already have NPM install and known how to clone
 
 ```
-cd /[name-of-your-directory]/FlagApi-v2/
+cd /path-to-your-where-you-want-to-create-your-app/
+git clone https://github.com/bflaven/FlagApi.git FlagApi-v2
+cd FlagApi-v2
+npm install
 npm start
+
 ```
 
+### Run the test
+Do not forget to launch the API before.
+
+```
+cd /path-to-your-where-you-want-to-create-your-app/FlagApi-v2/
+npm test
+
+```
 
 ## API
 
