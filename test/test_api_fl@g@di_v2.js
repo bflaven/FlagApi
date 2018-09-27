@@ -48,10 +48,10 @@ var path_for_borders = "/api/v2/name/";
                 
                 // DEBUG 
                 // console.log(res.body)
-                
+                expect(res).to.have.status(200);
                 expect(res.body).to.have.property('flag');
                 expect(res.body.flag[0]).to.deep.equal(data_flag[i].guid);
-                expect(res).to.have.status(200);
+                
                 done();
                 });
             });
@@ -69,10 +69,10 @@ var path_for_borders = "/api/v2/name/";
             // DEBUG            
             // console.log('res.body[0].capital => '+res.body[0].capital+'')
             // console.log('data_capital[i].guid => '+data_capital[i].guid+'')
-
+            expect(res).to.have.status(200);
             expect(res.body[0]).to.have.property('capital');
             expect(res.body[0].capital).to.deep.equal(data_capital[i].guid);
-            expect(res).to.have.status(200);
+
             done();
             });
         });
@@ -91,11 +91,11 @@ var path_for_borders = "/api/v2/name/";
             // DEBUG            
             // console.log('res.body[0].nativeLanguage => '+res.body[0].nativeLanguage+'')
             // console.log('data_languages[i].guid => '+data_languages[i].guid+'')
-            
+            expect(res).to.have.status(200);            
             expect(res.body[0]).to.have.property('nativeLanguage');
             expect(res.body[0].nativeLanguage).to.deep.equal(data_languages[i].guid);
             expect(res.body[0].nativeLanguage.length).to.equal(3);
-            expect(res).to.have.status(200);
+
             done();
             });
         });
@@ -115,12 +115,13 @@ var path_for_borders = "/api/v2/name/";
                 // console.log('res.body.tld[0] => '+res.body.tld[0]+'')
                 // console.log('data_tld[i].guid => '+data_tld[i].guid+'')
 
-
+                expect(res).to.have.status(200);
                 expect(res.body).to.have.property('tld');
+                expect(res.body.tld[0]).to.be.a("string").and.not.empty;
                 expect(res.body.tld[0]).to.deep.equal(data_tld[i].guid);
                 expect(res.body.tld[0].length).to.equal(3);
-                expect(res.body.tld[0]).to.be.a("string").and.not.empty;
-                expect(res).to.have.status(200);
+
+
                 done();
                 });
             });
@@ -138,11 +139,11 @@ var path_for_borders = "/api/v2/name/";
                 // DEBUG            
                 // console.log('res.body.area => '+res.body.area+'');
                 // console.log('data_area[i].guid => '+data_area[i].guid+'')
-
-                expect(res.body).to.have.property('area');
-                expect(res.body.area).to.deep.equal(data_area[i].guid);
-                expect(res.body.area).to.be.a("string").and.not.empty;
+                
                 expect(res).to.have.status(200);
+                expect(res.body).to.have.property('area');
+                expect(res.body.area).to.be.a("string").and.not.empty;
+                expect(res.body.area).to.deep.equal(data_area[i].guid);
                 done();
                 });
             });
@@ -165,9 +166,10 @@ var path_for_borders = "/api/v2/name/";
                 // console.log('res.body.borders => '+res.body.borders+'');
                 // console.log('data_borders[i].borders => '+data_borders[i].borders+'')
 
+                expect(res).to.have.status(200);
                 expect(res.body).to.have.property('borders');
                 expect(res.body.borders).to.deep.equal(data_borders[i].borders);
-                expect(res).to.have.status(200);
+
                 done();
                 });
             });
