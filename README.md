@@ -7,7 +7,7 @@ A basic application to get information about countries via a RESTful API (Node.J
 The original code was named restcountrie. The project is available on the github account of [Hengki Sihombin](https://github.com/hengkiardo/restcountries)
 
 
-The origianl and complete project is valaible at [REST Countries](https://restcountries.eu/https://restcountries.eu/)
+The original and complete project is available at [REST Countries](https://restcountries.eu/https://restcountries.eu/)
 
 
 ### Requirements
