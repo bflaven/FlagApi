@@ -167,13 +167,4 @@ http://localhost:3000/api/v2/area/:area_nb
 example: http://localhost:3000/api/v2/area/17098242
 
 
-### Clone this repository
 
-For those, you want to get the code directly, you can use the following command.
-
-```
-$ cd /path-to-your-where-you-want-to-create-your-app/
-$ git clone https://github.com/bflaven/FlagApi.git FlagApi-v2
-$ cd FlagApi-v2
-$ npm install
-```
